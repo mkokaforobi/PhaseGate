@@ -15,6 +15,7 @@ function arrayReverse (array) {
             start++;
             end--;
         }
+	return array;
     }
 }
 
@@ -24,6 +25,6 @@ let array = [
     [7, 8, 9]
 ];
 
-reverseArray(array);
+arrayReverse(array);
 
 console.log(array);

@@ -1,5 +1,5 @@
 
-def array_reverse (array):
+def reverse_array(array):
 
     for number in range(len(array)):
 
@@ -14,6 +14,7 @@ def array_reverse (array):
 
             start += 1
             end -= 1
+    return array
 
 
 array = [

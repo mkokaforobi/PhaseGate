@@ -4,10 +4,11 @@ import java.util.Arrays;
 
 public class SwapArrayGrid {
 
-    public static void arrayReverse (int[][] array) {
+    public static int[][] arrayReverse (int[][] array) {
         for (int number = 0; number < array.length; number++) {
-            int start = 0;
-            int end = array [number].length;
+	
+	    int start = 0;
+            int end = array [number].length -1;
 
             while (start < end) {
                 int temporaryArray = array[number][start];
@@ -18,37 +19,17 @@ public class SwapArrayGrid {
                 end--;
             }
         }
+	return array;
     }
 
     public static void main(String... args) {
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter number of rows: ");
-        int rows = input.nextInt();
-
-        System.out.print("Enter number of columns: ");
-        int columns = input.nextInt();
-
-        int[][] array = new int[rows][columns];
-
        
-        for (int number = 0; number < rows; number++) {
-            for (int count = 0; count < columns; count++) {
-                System.out.print("Enter number: ");
-                array[number][count] = input.nextInt();
-            }
-        }
-
-
-        arrayReverse(array);
+	int[][] array = {{1,2,3}, {4,5,6}, {7,8,9}};
+       
+        
+        int[][] revesedArray = arrayReverse(array);
 
         
-        System.out.println("Reversed array:");
-
-        for (int number = 0; number < rows; number++) {
-            System.out.println(Arrays.toString(array[number]));
-        }
-
-        
+        System.out.println(Arrays.deepToString(revesedArray));        
     }
 }
