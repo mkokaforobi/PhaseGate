@@ -19,7 +19,9 @@ def ask_number_of_subjects(number):
 
 
 
-def ask_student_score_and_subject(subject):
+def ask_student_score_and_subject_():
+
+	for number in range(0, subject_number):
 
 	student_name = input("Enter the name of the student: ")
 
@@ -54,8 +56,10 @@ def ask_student_score_and_subject(subject):
 
 
 
+
 check_number_of_student = ask_number_of_students(0);
 check_number_of_subjects = ask_number_of_subjects(0);
+check_student_score_and_subject = ask_student_score_and_subject( )
 
 
 print(check_number_of_student)
