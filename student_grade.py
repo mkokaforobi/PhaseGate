@@ -3,6 +3,8 @@ def ask_number_of_students(number):
 
 	student_number = input("Enter the number of students: ")
 
+	print()
+	
 	student_number_list = []
 
 	student_number_list.append(student_number)
@@ -47,31 +49,14 @@ def ask_student_score_and_subject(subject):
 
 				print("Invalid score")
 
-			elif(score >= 85):
-
-				print("A")
-
-			elif(score >= 70):
-
-				print("B")
-
-			elif(score >= 60):
-
-				print("C")
-			
-			eliif(score >= 50):
-
-				print("D")
-			else
-				print("F")
 		
 		score_list.append(subject_score)
 		
-		total_score = 
+		total_score += subject_score
 
 		next_entry = input("Do you want to enter another subject? Yes / No : ").lower()
 
-		Print(f"{student_name}" + score + )
+		Print(f"{student_name} + score + ")
 
 
 
