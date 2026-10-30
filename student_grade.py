@@ -1,27 +1,21 @@
 
 def ask_number_of_students(number):
 
-	student_number = input("Enter the number of students: ")
+	student_number = input("How many students do you have?  \n")
 
-	print()
-	
-	student_number_list = []
-
-	student_number_list.append(student_number)
-
-	return student_number_list
+	return student_number
 
 
 
 def ask_number_of_subjects(number):
 
-	subject_number = input("Enter the number of subjects: ")
+	subject_number = input("How many subjects do they offer?  \n")
 
-	subject_number_list = []
+	print("Saving >>>>>>>>>>>>>>>>>>>>>")
 
-	subject_number_list.append(subject_number)
+	print("Saved successfully")
 
-	return subject_number_list
+	return subject_number
 
 
 
